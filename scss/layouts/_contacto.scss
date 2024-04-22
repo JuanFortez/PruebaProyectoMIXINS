@@ -1,0 +1,93 @@
+/*MAIN CONTACTO*/
+
+.cont {
+    display: flex;
+    width: 100%;
+    margin-top: 33px;
+    margin-bottom: 30px;
+    padding: 30px;
+    justify-content: center;
+    
+    .form-content {
+        width: 500px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #ffac5f;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0px 4px 70px -10px rgba(0, 0, 0, 0.6);
+        gap: 15px;
+        outline: none;
+        
+        div {
+            label {
+                font-family: 'Kanit';
+                font-size: 1.6rem;
+            }
+            
+            input {
+                display: flex;
+                font-size: 1.4rem;
+                width: 300px;
+                padding: 10px;
+                border: none;
+                border-radius: 10px;
+                background-color: rgb(255, 198, 145);
+            }
+            
+            textarea {
+                display: flex;
+                height: 200px;
+                font-size: 1.6rem;
+                padding: 30px;
+                border-radius: 5px;
+                border: none;
+                background-color: rgb(255, 198, 145);
+            }
+        }
+
+        button {
+            cursor: pointer;
+            position: relative;
+            padding: 10px 24px;
+            font-size: 18px;
+            color: rgb(255, 198, 145);
+            border: 2px solid rgb(255, 135, 55);
+            border-radius: 10px;
+            background-color: transparent;
+            font-weight: 600;
+            transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+            overflow: hidden;
+
+            &::before {
+                content: '';
+                position: absolute;
+                inset: 0;
+                margin: auto;
+                width: 50px;
+                height: 50px;
+                border-radius: inherit;
+                scale: 0;
+                z-index: -1;
+                background-color: rgb(255, 135, 55);
+                transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+            }
+            
+            &:hover::before {
+                scale: 3;
+            }
+            
+            &:hover {
+                color: #212121;
+                scale: 1.1;
+                box-shadow: 0 0px 20px rgba(189, 101, 0, 0.4);
+            }
+            
+            &:active {
+                scale: 1;
+            }
+        }
+    }
+}

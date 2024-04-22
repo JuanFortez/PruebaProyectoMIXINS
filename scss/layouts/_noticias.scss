@@ -1,0 +1,136 @@
+/*MAIN NOTICIAS*/
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px;
+    padding: 20px;
+    margin: 50px;
+    
+    .card {
+        background-color: #ff9a3c;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        width: 400px;
+        padding: 15px;
+        border-radius: 10px;
+        color: white;
+        transition: 1s;
+        
+        img {
+            width: 100%;
+            height: 400px;
+            padding: 10px;
+            object-fit: cover;
+        }
+
+        h2,
+        p {
+            color: rgb(63, 63, 63);
+            text-align: start;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        a {
+            position: relative;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: 'ADLaM_Display';
+            background-color: rgb(255, 167, 95);
+            padding: 15px;
+            color: #000;
+            font-size: 18px;
+            width: 300px;
+            text-align: center;
+            display: inline-block;
+            border-radius: 6em;
+            transition: all .2s;
+            border: none;
+            font-weight: 500;
+            
+            &:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 10px 15px rgba(255, 115, 0, 0.726);
+            }
+    
+            &:active {
+                transform: translateY(-1px);
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            }
+    
+            &::after {
+                content: "";
+                display: inline-block;
+                height: 100%;
+                width: 100%;
+                border-radius: 100px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                transition: all .4s;
+            }
+    
+            &::after {
+                background-color: #ff8c2d;
+            }
+    
+            &:hover::after {
+                transform: scaleX(1.4) scaleY(1.6);
+                opacity: 0;
+            }
+        }
+
+
+        h2 {
+            font-size: 24px;
+            font-family: 'Galdeano';
+        }
+
+        p {
+            font-size: 16px;
+            font-family: 'Kanit';
+        }
+        
+        &:hover {
+            transform: scale(1.1, 1.1);
+        }
+
+    }
+
+    &:hover > .card:not(:hover) {
+        filter: blur(3px);
+        transform: scale(0.9, 0.9);
+    }
+  }
+
+.cias {
+    height: 1000px;
+    background-image: url(../imagenes/Yaguareteacostadoo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: local;
+    position: relative;
+    
+    .cias-content {
+        iframe {
+            width: 700px;
+            height: 450px;
+            border: none;
+            border-radius: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
