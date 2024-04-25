@@ -39,9 +39,9 @@
             align-items: flex-end;
             justify-content: flex-end;
             gap: 10px;
-            font-family: 'Galdeano';
             
             p {
+                font-family: 'Galdeano';
                 font-size: 2.4rem;
             }
 
@@ -136,8 +136,6 @@
     }
 
     .poss-content {
-        font-family: 'Kanit';
-        font-size: 2rem;
         text-align: justify;
         background-color: beige;
         width: 500px;
@@ -147,6 +145,11 @@
         border: 5px ridge  #f8a66f;
         top: 15px; 
         border-radius: 5px;
+
+        P {
+            font-family: 'Kanit';
+            font-size: 2rem;
+        }
     }
 }
 

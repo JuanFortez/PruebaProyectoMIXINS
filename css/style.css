@@ -60,6 +60,15 @@ footer .row .footer-img {
   margin: 30px;
   border-radius: 100%;
 }
+footer .row .nav-item {
+  font-family: "Truculenta";
+  font-size: 1.8rem;
+  transition: 0.3s;
+}
+footer .row .nav-item:hover {
+  scale: 1.1;
+  background-color: rgba(255, 123, 0, 0.3647058824);
+}
 footer .row .marquee {
   width: 100%;
   overflow: hidden;
@@ -239,9 +248,9 @@ nav ul li .nav-button:active {
   align-items: flex-end;
   justify-content: flex-end;
   gap: 10px;
-  font-family: "Galdeano";
 }
 .hero .hero-content .hero-item p {
+  font-family: "Galdeano";
   font-size: 2.4rem;
 }
 .hero .hero-content .hero-item:hover {
@@ -320,8 +329,6 @@ nav ul li .nav-button:active {
   top: 15px;
 }
 .poss .poss-content {
-  font-family: "Kanit";
-  font-size: 2rem;
   text-align: justify;
   background-color: beige;
   width: 500px;
@@ -331,6 +338,10 @@ nav ul li .nav-button:active {
   border: 5px ridge #f8a66f;
   top: 15px;
   border-radius: 5px;
+}
+.poss .poss-content P {
+  font-family: "Kanit";
+  font-size: 2rem;
 }
 
 .vidau {
@@ -445,8 +456,6 @@ nav ul li .nav-button:active {
   align-items: center;
 }
 .dis .dis-content {
-  font-family: "Kanit";
-  font-size: 1.7rem;
   text-align: justify;
   background-color: #ffac5f;
   border: 5px ridge #f8a66f;
@@ -454,6 +463,10 @@ nav ul li .nav-button:active {
   height: 420px;
   padding: 20px;
   border-radius: 5px;
+}
+.dis .dis-content p {
+  font-family: "Kanit";
+  font-size: 1.7rem;
 }
 
 /* carousel */
