@@ -24,7 +24,9 @@ footer {
         .marquee {
           width: 100%;
           overflow: hidden;
-
+          border-top: 1px solid #e68200;
+          border-bottom: 1px solid #e68200;
+          
           .marquee-content {
             text-decoration: none;
             
@@ -37,7 +39,8 @@ footer {
               animation: marquee-animation 20s linear infinite;
               
               li {
-                color: rgb(0, 0, 0);
+                color: rgb(209, 111, 30);
+                background-color: #ffa66b;
                 font-size: 4rem;
                 padding: 30px;
                 transition: 0.6s;
@@ -47,7 +50,7 @@ footer {
                   scale: 1.1;
                   li {
                     background-color: #ff9853;
-                    color: white;
+                    color: #000;
                   }
               }
             }

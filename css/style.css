@@ -63,6 +63,8 @@ footer .row .footer-img {
 footer .row .marquee {
   width: 100%;
   overflow: hidden;
+  border-top: 1px solid #e68200;
+  border-bottom: 1px solid #e68200;
 }
 footer .row .marquee .marquee-content {
   text-decoration: none;
@@ -76,7 +78,8 @@ footer .row .marquee .marquee-content ul {
   animation: marquee-animation 20s linear infinite;
 }
 footer .row .marquee .marquee-content ul li {
-  color: rgb(0, 0, 0);
+  color: rgb(209, 111, 30);
+  background-color: #ffa66b;
   font-size: 4rem;
   padding: 30px;
   transition: 0.6s;
@@ -86,7 +89,7 @@ footer .row .marquee .marquee-content ul:hover {
 }
 footer .row .marquee .marquee-content ul:hover li {
   background-color: #ff9853;
-  color: white;
+  color: #000;
 }
 @keyframes marquee-animation {
   0% {
