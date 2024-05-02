@@ -1,23 +1,12 @@
 /*MAIN DISTRIBUCION*/
 
 .dis {
-    width: 100%;
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
+  @include dis (row, wrap, 100%, 20px, center, center, center);
     
     .dis-content {
-        text-align: justify;
-        background-color: #ffac5f;
-        border: 5px ridge  #f8a66f;
-        width: 800px;
-        height: 420px;
-        padding: 20px;
-        border-radius: 5px;
+      background-color: #ffac5f;
+      border: 5px ridge  #f8a66f;
+      @include dis-content (1100px, auto, 20px, justify, 5px);
 
         p {
           font-family: 'Kanit';

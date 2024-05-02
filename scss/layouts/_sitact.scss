@@ -1,64 +1,41 @@
 /*MAIN SITUACION ACTUAL*/
 
 .sit {
-    width: 100%;
-    height: 1000px;
-    padding: 200px;
     background-image: url(../imagenes/yaguareteacostado.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    @include sit (100%, 1000px, 200px);
     
     .sit-content {  
         p {
             background-color: #4b833a; 
-            width: 100%;
-            height: 270px;
-            font-size: 2rem;
-            font-family: 'Kanit';
-            padding: 20px;
-            text-align: justify;
             opacity: 0.9;
-            border-radius: 10px;
-            overflow: hidden;
+            @include sit-content-p (100%, auto, 'Kanit', 2rem, 20px, justify, hidden, 10px);
         }
     }
 }
 
 
 .act {
-    width: 100%;
-    height: 1200px;
-    padding: 100px;
-    display: flex;
     position: relative;
+    @include act (100%, 1200px, 100px);
     
     .act-content {
         display: grid;
         align-items: center;
         
         img {
-            width: 700px;
-            height: 1000px;
-            border-radius: 10px;
             position: absolute;
-            right: 55%;
+            @include act-content-img (700px, 1000px, 10px, 55%);
         }
 
         p {
-            display: flex;
-            align-items: center;
-            font-family: 'Kanit';
-            font-size: 2.2rem;
-            background-color: #ffac5f;
             border: 5px ridge  #f8a66f;
-            width: 800px;
-            height: 900px;
-            padding: 35px;
-            text-align: justify;
-            border-radius: 5px;
+            background-color: #ffac5f;
             position: absolute;
             left: 55%;
+            @include act-content-p (800px, auto, 35px, center, 'Kanit', 2.2rem, justify, 5px);
         }
     }
 }

@@ -1,7 +1,7 @@
 /*HEADER*/
 
 .header-pant {
-    background-image: url(../imagenes/SelvaAmazonica.jpg);
+    background-image: url(../../../imagenes/SelvaAmazonica.jpg);
     background-attachment: scroll;
     background-repeat: no-repeat;
     background-size: cover;
@@ -9,20 +9,18 @@
     width: 100%;
     height: auto;
     align-content: center;
+    h1 {
+        width: 100%;
+        height: 1000px;
+        color: aliceblue;
+        font-family: 'Kanit';
+        font-size: 20rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 }
-
-h1 {
-    width: 100%;
-    height: 1000px;
-    color: aliceblue;
-    font-family: 'Kanit';
-    font-size: 20rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
 
 @keyframes show {
     from {
@@ -45,6 +43,9 @@ h1 {
 
     animation-range: entry 100% cover 75%;
 }
+
+
+
 
 .bg-naranja {
 	background-color: #f8a66f;

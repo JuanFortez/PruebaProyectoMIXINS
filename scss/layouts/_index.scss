@@ -12,37 +12,28 @@
     gap: 10px;
     
     .hero-content {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
         background-color: #f8a66f;
         width: 100%;
-        min-height: 500px;
-        max-height: 100%;
-        font-size: 2rem;
+        // min-height: 500px;
+        // max-height: 100%;
+        // font-size: 2rem;
         
         img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+            @include hero-content-img(100%, 100%, cover);
         }
 
         .hero-item {
             background-color: transparent;
             transition: background-color 0.5s ease-in-out;
             color: transparent;
-            position: absolute;
             height: 100%;
-            padding: 10px;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            justify-content: flex-end;
-            gap: 10px;
+            @include hero-item(column, flex-end, flex-end, absolute, 10px, 10px);
             
             p {
-                font-family: 'Galdeano';
-                font-size: 2.4rem;
+                @include hero-item-p(2.4rem, 'Galdeano');
             }
 
             &:hover {
