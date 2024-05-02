@@ -98,3 +98,43 @@
   }
 
   //MIXINS NOTICIAS
+
+  @mixin cards ($flex-wrap, $justify-content, $gap, $padding, $margin) {
+    display: flex;
+    flex-wrap: $flex-wrap;
+    justify-content: $justify-content;
+    gap: $gap;
+    padding: $padding;
+    margin: $margin;
+  }
+
+  @mixin card-img ($width, $height, $padding, $object-fit) {
+    width: $width;
+    height: $height;
+    padding: $padding;
+    object-fit: $object-fit;
+  }
+
+  @mixin card-h2-p ($flex-direction, $justify-content, $align-items, $padding, $gap) {
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    padding: $padding;
+    gap: $gap;
+  }
+
+  @mixin card-a ($width, $padding, $font-weight, $font-size, $text-decoration, $text-align, $border, $border-radius, $font-family, $text-transform, $position) {
+    width: $width;
+    padding: $padding;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    text-decoration: $text-decoration;
+    text-align: $text-align;
+    border: $border;
+    border-radius: $border-radius;
+    font-family: $font-family;
+    text-transform: $text-transform;
+    position: $position;
+  }
+    
