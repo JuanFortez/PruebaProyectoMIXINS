@@ -12,28 +12,38 @@
     gap: 10px;
     
     .hero-content {
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background-color: #f8a66f;
         width: 100%;
-        // min-height: 500px;
-        // max-height: 100%;
-        // font-size: 2rem;
-        
+        min-height: 500px;
+        max-height: 100%;
+        font-size: 2rem;
+
         img {
-            @include hero-content-img(100%, 100%, cover);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         .hero-item {
             background-color: transparent;
             transition: background-color 0.5s ease-in-out;
             color: transparent;
+            position: absolute;
             height: 100%;
-            @include hero-item(column, flex-end, flex-end, absolute, 10px, 10px);
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: flex-end;
+            gap: 10px;
             
             p {
-                @include hero-item-p(2.4rem, 'Galdeano');
+                font-family: 'Galdeano';
+                font-size: 2.4rem;
+                height: auto;
             }
 
             &:hover {
@@ -130,16 +140,18 @@
         text-align: justify;
         background-color: beige;
         width: 500px;
-        height: 400px;
+        height: 520px;
         overflow: hidden;
         padding: 10px;
         border: 5px ridge  #f8a66f;
         top: 15px; 
         border-radius: 5px;
+        display: flex;
+        align-items: center;
 
         P {
             font-family: 'Kanit';
-            font-size: 2rem;
+            font-size: 1.6rem;
         }
     }
 }

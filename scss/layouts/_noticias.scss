@@ -1,7 +1,12 @@
 /*MAIN NOTICIAS*/
 
 .cards {
-    @include cards (wrap, space-evenly, 30px, 20px, 50px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px;
+    padding: 20px;
+    margin: 50px;
     
     .card {
         background-color: #ff9a3c;
@@ -17,22 +22,40 @@
         transition: 1s;
         
         img {
-            @include card-img (100%, 400px, 10px, cover);
+            width: 100%;
+            height: 400px;
+            padding: 10px;
+            object-fit: cover;
         }
 
         h2,
         p {
             color: rgb(63, 63, 63);
             text-align: start;
-            @include card-h2-p (column, center, flex-start, 20px, 10px);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: center;
+            align-items: flex-start;
         }
 
         a {
-            display: inline-block;
-            color: #000;
-            transition: all .2s;
+            position: relative;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: 'Galdeano';
             background-color: rgb(255, 167, 95);
-            @include card-a (300px, 15px, 500, 18px, none, center, none, 6em, 'Galdeano', uppercase, relative);
+            padding: 15px;
+            color: #000;
+            font-size: 18px;
+            width: 300px;
+            text-align: center;
+            display: inline-block;
+            border-radius: 6em;
+            transition: all .2s;
+            border: none;
+            font-weight: 500;
             
             &:hover {
                 transform: translateY(-3px);
