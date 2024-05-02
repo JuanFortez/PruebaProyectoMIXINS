@@ -1,0 +1,22 @@
+
+//MIXINS
+
+@mixin flex ($flex-direction, $flex-wrap, $justify-content, $align-items, $align-content) {
+    display: flex;
+    flex-direction: $flex-direction;
+    flex-wrap: $flex-wrap;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    align-content: $align-content;
+}
+
+@mixin font ($font-size, $font-family) {
+    font-size: $font-size;
+    font-family: $font-family;
+}
+
+@mixin img ($width, $height, $object-fit) {
+    width: $width;
+    height: $height;
+    object-fit: $object-fit
+}

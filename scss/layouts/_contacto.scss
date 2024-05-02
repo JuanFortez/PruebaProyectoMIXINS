@@ -2,18 +2,16 @@
 
 .cont {
     display: flex;
+    justify-content: center;
     width: 100%;
     margin-top: 33px;
     margin-bottom: 30px;
     padding: 30px;
-    justify-content: center;
     
     .form-content {
+        @include flex (column, none, none, center, none);
         width: 500px;
         padding: 40px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         background-color: #ffac5f;
         border: none;
         border-radius: 10px;
@@ -23,8 +21,7 @@
         
         div {
             label {
-                font-family: 'Kanit';
-                font-size: 1.6rem;
+                @include font (1.6rem, 'Kanit');
             }
             
             input {

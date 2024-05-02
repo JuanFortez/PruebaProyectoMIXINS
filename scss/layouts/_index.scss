@@ -12,38 +12,29 @@
     gap: 10px;
     
     .hero-content {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         background-color: #f8a66f;
         width: 100%;
         min-height: 500px;
         max-height: 100%;
         font-size: 2rem;
+        @include flex (none, none, center, center, none);
 
         img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+            @include img (100%, 100%, cover);
         }
 
         .hero-item {
+            @include flex (column, none, flex-end, flex-end, none);
             background-color: transparent;
             transition: background-color 0.5s ease-in-out;
             color: transparent;
             position: absolute;
             height: 100%;
             padding: 10px;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            justify-content: flex-end;
             gap: 10px;
             
             p {
-                font-family: 'Galdeano';
-                font-size: 2.4rem;
-                height: auto;
+                @include font (2.4rem, 'Galdeano');
             }
 
             &:hover {
@@ -67,13 +58,10 @@
 
     .b1 {
         grid-area: box1;
-        display: flex;
-        flex-direction: column;
         text-align: left;
-        align-items: flex-start;
-        justify-content: center;
         padding: 0;
         position: relative;
+        @include flex (column, none, center, flex-start, none);
     }
     
     .b2 {
@@ -82,24 +70,18 @@
     
     .b3 {    
         grid-area: box3;
-        display: flex;
-        flex-direction: column;
         text-align: left;
-        align-items: flex-start;
-        justify-content: center;
         padding: 0;
         position: relative;
+        @include flex (column, none, center, flex-start, none);
     }
     
     .b4 {
         grid-area: box4;
-        display: flex;
-        flex-direction: column;
         text-align: left;
-        align-items: flex-start;
-        justify-content: center;
         padding: 0;
         position: relative;
+        @include flex (column, none, center, flex-start, none);
     }
     
     .b5 {
@@ -122,12 +104,8 @@
 .poss {
     width: 100%;
     padding: 50px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    align-items: center;
     gap: 30px;
+    @include flex (row, nowrap, space-evenly, center, none);
 
     img {
         width: 650px;
@@ -137,6 +115,8 @@
     }
 
     .poss-content {
+        display: flex;
+        align-items: center;
         text-align: justify;
         background-color: beige;
         width: 500px;
@@ -146,12 +126,9 @@
         border: 5px ridge  #f8a66f;
         top: 15px; 
         border-radius: 5px;
-        display: flex;
-        align-items: center;
 
         P {
-            font-family: 'Kanit';
-            font-size: 1.6rem;
+            @include font (1.6rem, 'Kanit');
         }
     }
 }
@@ -168,11 +145,7 @@
     .vidau-content {
         width: 100%;
         height: 100%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        align-items: center;
+        @include flex (row, nowrap, space-evenly, center, none);
         
         iframe {
             width: 650px;
@@ -182,18 +155,14 @@
         }
 
         div {
+            @include flex (column, none, center, flex-start, none);
             width: 400px;
             height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
             gap: 20px;
             
             h2 {
-                font-family: 'Kanit';
+                @include font (2.4rem, 'Kanit');
                 color: rgb(252, 172, 82);
-                font-size: 24px;
             }
 
             audio {

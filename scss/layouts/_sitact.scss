@@ -7,11 +7,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
+    @include flex (column, wrap, center, none, center);
     gap: 20px;
     
     .sit-content { 
@@ -20,13 +16,12 @@
             background-color: #4b833a; 
             width: 100%;
             height: auto;
-            font-size: 2rem;
-            font-family: 'Kanit';
             padding: 20px;
             text-align: justify;
             opacity: 0.9;
             border-radius: 10px;
             overflow: hidden;
+            @include font (2rem, 'Kanit');
         }
     }
 }
@@ -39,14 +34,11 @@
     justify-content: space-evenly;
     
     .act-content {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+        @include flex (row, none, none, center, none);
         gap: 100px;
         
         img {
-            width: 700px;
-            height: 1000px;
+            @include img (700px, 1000px, cover);
             border-radius: 10px;
             right: 55%;
         }
@@ -54,8 +46,7 @@
         p {
             display: flex;
             align-items: center;
-            font-family: 'Kanit';
-            font-size: 2.2rem;
+            @include font (2.2rem, 'Kanit');
             background-color: #ffac5f;
             border: 5px ridge  #f8a66f;
             width: 900px;
